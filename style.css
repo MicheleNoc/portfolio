@@ -1,0 +1,94 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 20px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 20px;
+    
+  }
+
+.container-home h1 {
+    font-family: "Nanum Gothic Coding";
+    color: aliceblue;
+    display: grid;
+    grid-column: span 2;
+}
+
+.container-home h2 {
+    color: aliceblue;
+}
+.textalig{
+    text-align: left;
+    padding: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBA834;
+    height: 100vh;
+
+}
+
+.container-home img {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 56px;
+    margin-right: 50px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333A73;
+  }
+
+  .progetti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #387ADF;
+    height: 100vh;
+  }
+
+  .bottom-container {
+    background-color: #66bfbf;
+    padding: 50px 0 20px;
+}
+.contatti  {
+    color: whitesmoke;
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    background-color: #50C4ED;
+}
+
+.progetti h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.skills h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (min-widht: 600px) {
+
+  .container-home img {
+    size: 100px;
+}
+
+}
+
