@@ -1,0 +1,112 @@
+/* Stili generali */
+body, html {
+    background-color: 212529 !important;
+    width: 100vw;
+    margin: 0; /* Assicurati che non ci siano margini extra */
+    padding: 0; /* Assicurati che non ci siano padding extra */
+}
+
+.pic {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Aggiunto valore di ombra e colore */
+}
+
+.presentazione, .album {
+    width: 100vw;
+    height: 100vh;
+}
+
+.progettitext {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #212529 !important;
+    border: none !important;
+}
+
+footer {
+    padding: 1rem 2rem; /* Riduci il padding se necessario */
+}
+
+footer .col-md-4 {
+    margin: 0; /* Assicurati che non ci siano margini non necessari */
+}
+
+footer .btn-group a {
+    font-size: 1.5rem; /* Assicurati che i link non siano troppo grandi */
+}
+
+.container, .container-fluid {
+    padding: 0 15px; /* Riduci il padding se necessario */
+}
+
+.img-fluid {
+    max-width: 100%; /* Assicurati che le immagini non superino la larghezza del contenitore */
+    height: auto; /* Mantieni le proporzioni dell'immagine */
+}
+
+body {
+    overflow-x: hidden; /* Nasconde lo scroll orizzontale se necessario */
+}
+
+/* Media Queries per schermi più piccoli */
+@media (max-width: 992px) {
+    .presentazione, .album {
+        height: auto; /* Permette l'altezza automatica per i piccoli schermi */
+        padding: 1rem; /* Aggiungi padding per evitare che il contenuto sia troppo vicino ai bordi */
+    }
+
+    .pic {
+        width: 100%; /* Assicura che l'immagine occupi tutta la larghezza del contenitore */
+        height: auto; /* Mantiene le proporzioni dell'immagine */
+    }
+
+    .progettitext {
+        flex-direction: column; /* Cambia la direzione del layout per schermi piccoli */
+        align-items: center; /* Centra il contenuto */
+    }
+
+    footer {
+        padding: 0.5rem 1rem; /* Riduci il padding per schermi più piccoli */
+    }
+
+    footer .btn-group a {
+        font-size: 1.2rem; /* Riduci la dimensione del font per schermi più piccoli */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 0.875rem; /* Riduci la dimensione del testo nella navbar per schermi piccoli */
+    }
+
+    .container {
+        padding: 0 10px; /* Riduci ulteriormente il padding per schermi molto piccoli */
+    }
+
+    .grid-list {
+        grid-template-columns: 1fr; /* Gli elementi della lista occupano tutta la larghezza del contenitore */
+    }
+
+    .pic {
+        border-radius: 5px; /* Riduci il border-radius per schermi molto piccoli */
+    }
+}
+
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-toggler {
+        font-size: 1.2rem; /* Aumenta la dimensione del toggle button per migliorare la visibilità */
+    }
+
+    .navbar-toggler-icon {
+        width: 30px; /* Imposta una dimensione fissa per l'icona del toggle button */
+        height: 30px;
+    }
+}
