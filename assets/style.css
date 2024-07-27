@@ -1,7 +1,6 @@
 /* Stili generali */
 body, html {
     background-color: 212529 !important;
-    width: 100vw;
     margin: 0; /* Assicurati che non ci siano margini extra */
     padding: 0; /* Assicurati che non ci siano padding extra */
 }
@@ -13,7 +12,6 @@ body, html {
 
 .presentazione, .album {
     width: 100vw;
-    height: 100vh;
 }
 
 .progettitext {
@@ -27,15 +25,8 @@ body, html {
 }
 
 footer {
+    background-color: #212529 !important;
     padding: 1rem 2rem; /* Riduci il padding se necessario */
-}
-
-footer .col-md-4 {
-    margin: 0; /* Assicurati che non ci siano margini non necessari */
-}
-
-footer .btn-group a {
-    font-size: 1.5rem; /* Assicurati che i link non siano troppo grandi */
 }
 
 .container, .container-fluid {
