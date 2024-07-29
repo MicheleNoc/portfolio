@@ -1,15 +1,16 @@
 /* Stili generali */
 body, html {
     background-color: 212529 !important;
-    margin: 0; /* Assicurati che non ci siano margini extra */
-    padding: 0; /* Assicurati che non ci siano padding extra */
 }
 
 .pic {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Aggiunto valore di ombra e colore */
 }
-
+.container-presentazione {
+    height: 80vh;
+    margin-left: 40px;
+}
 .presentazione, .album {
     width: 100vw;
 }
