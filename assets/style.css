@@ -36,6 +36,7 @@ body, html {
 
 /* Navbar fissa in alto */
 .navbar {
+    background-color: #ffffff !important;
     color: black; /* Testo nero */
     background-color: white; /* Sfondo bianco per la navbar */
     position: fixed;
