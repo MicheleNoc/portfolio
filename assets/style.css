@@ -37,8 +37,7 @@ body, html {
 /* Navbar fissa in alto */
 .navbar {
     background-color: #ffffff !important;
-    color: black; /* Testo nero */
-    background-color: white; /* Sfondo bianco per la navbar */
+    color: #000000 !important; /* Imposta il colore del testo su nero */
     position: fixed;
     top: 0;
     width: 100%;
@@ -96,6 +95,12 @@ footer {
 }
 
 /* Link nel footer */
+
+footer {
+    background-color: #f8f9fa !important; /* Imposta il colore di sfondo su chiaro */
+    color: black !important; /* Assicurati che il testo sia nero */
+}
+
 footer a {
     color: black; /* Colore nero per i link del footer */
 }
