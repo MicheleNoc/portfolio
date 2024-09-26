@@ -1,14 +1,43 @@
-/* Stili per il tema dark */
+/* Animazione di digitazione */
+.typing {
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black; /* Cambia il colore se necessario */
+    }
+}
+
+
+
 body, html {
-    background-color: #212529;
-    color: #f8f9fa; /* Testo chiaro */
-    padding-top: 70px; /* Spazio per evitare la sovrapposizione con la navbar fissa */
+    height: 100%;
+    color: black; /* Testo nero */
+    background-color: white; /* Sfondo bianco */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 /* Navbar fissa in alto */
 .navbar {
-    background-color: #212529; /* Sfondo scuro per la navbar */
-    color: #f8f9fa; /* Testo chiaro */
+    color: black; /* Testo nero */
+    background-color: white; /* Sfondo bianco per la navbar */
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,54 +47,61 @@ body, html {
 
 /* Stili dei link della navbar */
 .navbar .nav-link {
-    color: #f8f9fa !important; /* Testo bianco per i link */
-    transition: color 0.3s ease; /* Effetto transizione */
+    color: black !important; /* Testo nero per i link */
 }
 
 .navbar .nav-link:hover {
-    color: #adb5bd !important; /* Colore più chiaro al passaggio del mouse */
+    color: #0056b3 !important; /* Colore blu al passaggio del mouse */
 }
 
 /* Link attivo */
 .navbar .nav-link.active {
-    background-color: #495057; /* Sfondo per il link attivo */
-    color: #f8f9fa !important; /* Testo bianco per il link attivo */
+    background-color: #e9ecef; /* Sfondo chiaro per il link attivo */
+    color: black !important; /* Testo nero per il link attivo */
     border-radius: 0.25rem; /* Angoli leggermente arrotondati */
 }
 
 /* Footer */
 footer {
-    background-color: #212529; /* Footer scuro */
-    color: #f8f9fa; /* Testo chiaro */
+    background-color: #f8f9fa; /* Footer chiaro */
+    color: black; /* Testo nero */
     padding: 1rem 2rem; /* Padding standard */
 }
 
 /* Card */
 .card {
-    background-color: #343a40; /* Sfondo delle card scuro */
-    color: #f8f9fa; /* Testo chiaro */
+    background-color: #f8f9fa; /* Sfondo delle card chiaro */
+    color: black; /* Testo nero */
 }
 
 .card a {
-    color: #f8f9fa; /* Colore dei link chiari */
+    color: black; /* Colore dei link neri */
 }
 
 .card .btn-outline-secondary {
-    color: #f8f9fa; /* Testo nei bottoni */
-    border-color: #f8f9fa;
+    color: black; /* Testo nei bottoni */
+    border-color: black; /* Bordo nero */
 }
 
 .card .btn-outline-secondary:hover {
-    background-color: #f8f9fa;
-    color: #212529; /* Inverte i colori al passaggio del mouse */
+    background-color: black; /* Sfondo nero al passaggio del mouse */
+    color: white; /* Testo bianco al passaggio del mouse */
+}
+
+/* Aggiungi questo nel tuo style.css */
+.card-body i {
+    font-size: 1.5rem; /* Dimensione dell'icona */
+    margin-right: 10px; /* Spazio tra le icone */
 }
 
 /* Link nel footer */
 footer a {
-    color: #f8f9fa; /* Colore chiaro per i link del footer */
+    color: black; /* Colore nero per i link del footer */
 }
 
 /* Testi principali */
 .text-body-emphasis {
-    color: #f8f9fa !important; /* Testo principale in chiaro */
+    color: black !important; /* Testo principale in nero */
 }
+
+
