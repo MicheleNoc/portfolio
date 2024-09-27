@@ -34,6 +34,10 @@ body, html {
 
 }
 
+img {
+    object-fit: cover
+}
+
 /* Navbar fissa in alto */
 .navbar {
     background-color: #ffffff !important;
