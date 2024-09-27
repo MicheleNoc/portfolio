@@ -120,3 +120,12 @@ footer a {
         font-size: 1rem; /* Riduci la dimensione del testo per smartphone */
     }
 }
+
+.flip-container {
+    perspective: 1000px;
+}
+
+.flip-container:hover .pic {
+    transition: transform 0.6s;
+    transform: rotateY(360deg);
+}
